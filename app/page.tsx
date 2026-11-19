@@ -12,6 +12,8 @@ const gallery = [
 {src:"/images/white-studio.jpg",title:"Natural Light",category:"Commercial",size:"normal"},
 {src:"/images/casual-look.jpg",title:"Off Duty",category:"Lifestyle",size:"normal"},
 {src:"/images/beige-look.jpg",title:"City Lights",category:"Lifestyle",size:"normal"},
+{src:"/images/garden-editorial.jpg",title:"Garden Romance",category:"Lifestyle",size:"wide"},
+{src:"/images/black-gold-caftan.jpg",title:"Caftan Heritage",category:"Editorial",size:"normal"},
 ];
 const stats=[["Height","170 cm"],["Clothing","EU 36"],["Bust","80 cm"],["Waist","To be added"],["Hips","To be confirmed"],["Shoes","To be added"],["Hair","To be confirmed"],["Eyes","To be confirmed"]];
 function Photo({src,alt,className=""}:{src:string;alt:string;className?:string}){const [failed,setFailed]=useState(false);return <div className={`photo ${className}`}>{!failed?<img src={src} alt={alt} loading="lazy" onError={()=>setFailed(true)}/>:<div className="photo-fallback"><span>N.</span><small>PHOTO COMING SOON</small></div>}</div>}
