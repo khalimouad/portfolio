@@ -14,6 +14,20 @@ const gallery = [
 {src:"/images/beige-look.jpg",title:"City Lights",category:"Lifestyle",size:"normal"},
 {src:"/images/garden-editorial.jpg",title:"Garden Romance",category:"Lifestyle",size:"wide"},
 {src:"/images/black-gold-caftan.jpg",title:"Caftan Heritage",category:"Editorial",size:"normal"},
+{src:"/images/floral-caftan.jpg",title:"Floral Elegance",category:"Editorial",size:"normal"},
+{src:"/images/hooded-caftan.jpg",title:"The Hooded Look",category:"Editorial",size:"normal"},
+{src:"/images/fez-portrait.jpg",title:"Royal Portrait",category:"Beauty",size:"normal"},
+{src:"/images/ivory-caftan.jpg",title:"Ivory Tradition",category:"Editorial",size:"wide"},
+{src:"/images/designer-backstage.jpg",title:"Designer Atelier",category:"Editorial",size:"normal"},
+{src:"/images/street-casual.jpg",title:"Street Spirit",category:"Lifestyle",size:"wide"},
+{src:"/images/yellow-caftan.jpg",title:"Sunlit Heritage",category:"Editorial",size:"normal"},
+{src:"/images/black-veil.jpg",title:"Midnight Lace",category:"Editorial",size:"normal"},
+{src:"/images/red-carpet.jpg",title:"The Red Carpet",category:"Runway",size:"wide"},
+{src:"/images/desert-adventure.jpg",title:"Desert Escape",category:"Lifestyle",size:"normal"},
+{src:"/images/night-editorial.jpg",title:"After Dark",category:"Editorial",size:"wide"},
+{src:"/images/ivory-portrait.jpg",title:"Golden Details",category:"Beauty",size:"normal"},
+{src:"/images/fez-editorial.jpg",title:"The Artisan Edit",category:"Editorial",size:"normal"},
+{src:"/images/blue-runway.jpg",title:"Blue Runway",category:"Runway",size:"wide"},
 ];
 const stats=[["Height","170 cm"],["Clothing","EU 36"],["Bust","80 cm"],["Waist","To be added"],["Hips","To be confirmed"],["Shoes","To be added"],["Hair","To be confirmed"],["Eyes","To be confirmed"]];
 function Photo({src,alt,className=""}:{src:string;alt:string;className?:string}){const [failed,setFailed]=useState(false);return <div className={`photo ${className}`}>{!failed?<img src={src} alt={alt} loading="lazy" onError={()=>setFailed(true)}/>:<div className="photo-fallback"><span>N.</span><small>PHOTO COMING SOON</small></div>}</div>}
