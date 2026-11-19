@@ -1,8 +1,8 @@
-# Nadia — Model Portfolio
+# Nadine — Model Portfolio
 
 A cinematic editorial model portfolio built with Next.js, Framer Motion and CSS. Deployable on Vercel.
 
-## Add Nadia's photos
+## Add Nadine's photos
 
 Upload the approved **unique** photos to `public/images/` with these filenames:
 
@@ -20,7 +20,7 @@ The site shows graceful placeholders until images are uploaded. Do not upload du
 
 ## Customize
 
-Update `stats` in `app/page.tsx` when waist, hips, shoe size and other measurements are confirmed. Replace the placeholder email `booking@example.com` with Nadia's approved booking email before launch. Add verified modeling credits in the Experience section.
+Update `stats` in `app/page.tsx` when waist, hips, shoe size and other measurements are confirmed. Replace the placeholder email `booking@example.com` with Nadine's approved booking email before launch. Add verified modeling credits in the Experience section.
 
 ## Run
 
@@ -29,3 +29,8 @@ Update `stats` in `app/page.tsx` when waist, hips, shoe size and other measureme
 ## Deploy
 
 Import `khalimouad/portfolio` in Vercel; framework Next.js; default build settings.
+
+## Identity
+Professional name: **Nadine**. Real name: **Nadia Addya**.
+
+The approved images are prepared in a ZIP with exact target paths under `public/images/`. Extract and upload that directory to GitHub to show the real photos.
